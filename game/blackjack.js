@@ -18,9 +18,7 @@ class Gamer {
     }
 }
 
-class Dealer extends Gamer {
 
-}
 
 
 

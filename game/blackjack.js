@@ -35,4 +35,18 @@ shuffle()
 console.log(deck)
 
 
+/*
+*** TO DO ***
+
+create dealer and player(s)
+
+deal cards to players and dealer
+
+player game 
+
+player vs dealer
+
+outcome
+
+*/
 

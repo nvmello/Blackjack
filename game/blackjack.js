@@ -12,15 +12,6 @@ const deck = new Array();
 //         this.hand = new Array();
 //     }
 
-//     hit(newCard) {
-//         this.hand.push(newCard);
-//     }
-// }
-
-// class Dealer extends Gamer {
-
-// }
-
 
 
 

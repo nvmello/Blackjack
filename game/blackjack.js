@@ -1,7 +1,13 @@
+// requirements
+const gamer = require("gamer.js")
+const player = require("player.js")
+const dealer = require("dealer.js")
+// constants
 const suits = ["Spades", "Club", "Hearts", "Diamonds"]
 const faceValue = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 const deck = new Array();
-
+const gamer = require("gamer.js")
+const player = require("player.js")
 class Gamer {
     constructor() {
         this.hand = new Array();
@@ -15,7 +21,6 @@ class Gamer {
 class Dealer extends Gamer {
 
 }
-
 
 
 

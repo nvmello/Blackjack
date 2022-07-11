@@ -1,26 +1,25 @@
 // requirements
-const gamer = require("gamer.js")
-const player = require("player.js")
-const dealer = require("dealer.js")
+// const gamer = require("gamer.js")
+import { Player } from "./player.js";
+// const dealer = require("dealer.js")
 // constants
 const suits = ["Spades", "Club", "Hearts", "Diamonds"]
 const faceValue = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 const deck = new Array();
-const gamer = require("gamer.js")
-const player = require("player.js")
-class Gamer {
-    constructor() {
-        this.hand = new Array();
-    }
 
-    hit(newCard) {
-        this.hand.push(newCard);
-    }
-}
+// class Gamer {
+//     constructor() {
+//         this.hand = new Array();
+//     }
 
-class Dealer extends Gamer {
+//     hit(newCard) {
+//         this.hand.push(newCard);
+//     }
+// }
 
-}
+// class Dealer extends Gamer {
+
+// }
 
 
 
@@ -67,7 +66,7 @@ function shuffle() {
 createDeck(2)
 shuffle()
 console.log(deck)
-
+console.log(Player)
 
 /*
 *** TO DO ***

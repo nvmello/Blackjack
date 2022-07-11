@@ -2,13 +2,31 @@ const suits = ["Spades", "Club", "Hearts", "Diamonds"]
 const faceValue = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 const deck = new Array();
 
+class Gamer {
+    constructor() {
+        this.hand = new Array();
+    }
+
+    hit(newCard) {
+        this.hand.push(newCard);
+    }
+}
+
+class Dealer extends Gamer {
+
+}
+
+
+
+
+
 class Card {
     constructor(value, suit, weight) {
-      this.value = value;
-      this.suit = suit;
-      this.weight = weight;
+        this.value = value;
+        this.suit = suit;
+        this.weight = weight;
     }
-  }
+}
 
 
 function createDeck(deckCount = 1) {

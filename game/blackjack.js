@@ -2,6 +2,15 @@ const suits = ["Spades", "Club", "Hearts", "Diamonds"]
 const faceValue = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 const deck = new Array();
 
+class Card {
+    constructor(value, suit, weight) {
+      this.value = value;
+      this.suit = suit;
+      this.weight = weight;
+    }
+  }
+
+
 function createDeck(deckCount = 1) {
     for (let a = 0; a < deckCount; a++) {
         for (let i = 0; i < faceValue.length; i++) {
@@ -14,12 +23,14 @@ function createDeck(deckCount = 1) {
                     weight = 11;
                     // How do I make this weight be 1 OR 11
                 }
-                let card = { Value: faceValue[i], Suit: suits[x], Weight: weight };
+                // let card = { Value: faceValue[i], Suit: suits[x], Weight: weight };
+                const card = new Card(faceValue[i], suits[x], weight);
                 deck.push(card);
             }
         }
     }
 }
+
 function shuffle() {
     for (let i = 0; i < 1000; i++) {
         let location1 = Math.floor((Math.random() * deck.length));

@@ -1,3 +1,5 @@
+import { Gamer } from './gamer.js'
+
 class Dealer extends Gamer {
     constructor(hand) {
         super(hand);
